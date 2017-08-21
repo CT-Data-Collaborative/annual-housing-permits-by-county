@@ -1,0 +1,196 @@
+{
+  "name": "annual-housing-permits-by-county",
+  "datapackage_version": "1.0-beta.18",
+  "title": "Annual Housing Permits by County",
+  "description": "Annual Housing Permits by County reports the number of residential permits issued annually for new residential structures.",
+  "version": "1.0",
+  "licenses": [{
+    "url": "http://opendatacommons.org/licenses/pddl/",
+    "name": "Open Data Commons Public Domain",
+    "version": "1.0",
+    "id": "odc-pddl"
+  }],
+  "sources": [{
+    "name": "ctdecd",
+    "web": ""
+  }],
+  "author":[{
+    "name": "Jenna Daly",
+    "email": "jdaly@ctdata.org",
+    "web": "http://ctdata.org"
+  }],
+  "contributor": [],
+  "resources": [{
+    "path": "data/annual-housing-permits-by-county_2016.csv",
+    "format": "csv",
+    "schema": {
+      "fields": [{
+          "name": "County",
+          "type": "string",
+          "dimension": false
+        }, {
+          "name": "FIPS",
+          "type": "string",
+          "dimension": false
+        }, {
+          "name": "Year",
+          "type": "string",
+          "dimension": false
+        }, {
+          "name": "Measure Type",
+          "type": "string",
+          "dimension": true,
+          "constraints": {
+		        "enum": [
+		          "Number", 
+		          "Percent"
+		        ]
+			    }
+        }, {
+          "name": "Variable",
+          "type": "string",
+          "dimension": true,
+          "constraints": {
+		        "enum": [
+		          "Housing Permits"
+		        ]
+			    }
+        }, {
+          "name": "Value",
+          "type": "number",
+          "dimension": false
+        }]
+      }
+    }
+  ],
+  "last_modified": "08/21/2017",
+  "ckan_extras": {
+    "full_description": {
+      "ckan_name": "Full Description",
+      "value": "Housing Permits reports the number of residential permits issued annually for new residential structures. The Department of Economic and Community Develpment (DECD) Research compiles this data annually. Data is also collected by the U.S. Census on a monthly basis but only for a sample of towns in Connecticut. This sample universe changed by the Census Bureau every ten years. From 2005 through 2015, this sample counted permits from 128 out of 169 towns in Connecticut. Beginning in 2015, the new survey sample counts permits from 104 out of 169 towns. The monthly data can be found on the Department of Economic and Community Development's website. CTData also carries Annual Housing Permits by Town.",
+      "type": "string"
+    },
+    "suppression": {
+      "ckan_name": "Suppression",
+      "value": "",
+      "type": "string"
+    },
+    "technical_notes": {
+      "ckan_name": "Technical Notes",
+      "value": "Technical notes for advanced users",
+      "type": "string"
+    },
+    "socrata": {
+      "ckan_name": "Socrata",
+      "value": "False",
+      "type": "string"
+    },
+    "socrata_url": {
+      "ckan_name": "Socrata Dataset URL",
+      "value": "",
+      "type": "string"
+    },
+    "domain": {
+      "ckan_name": "Domain",
+      "value": "Housing",
+      "type": "string"
+    },
+    "subdomain": {
+      "ckan_name": "Subdomain",
+      "value": "Housing Characteristics",
+      "type": "string"
+    },
+    "numerator": {
+      "ckan_name": "Numerator",
+      "value": "Total Number of permits, annually.",
+      "type": "string"
+    },
+    "denominator": {
+      "ckan_name": "Denominator",
+      "value": "Total permits issued in the state.",
+      "type": "string"
+    },    
+    "geography": {
+      "ckan_name": "Geography",
+      "value": "County",
+      "type": "string",
+      "constraints": {"enum": ["Town", "County", "Town/County", "District", "Other"]}
+    },
+    "frequency": {
+      "ckan_name": "Frequency",
+      "value": "Annual",
+      "type": "string"
+    },
+    "years_in_catalog": {
+      "ckan_name": "Years in Catalog",
+      "value": ["1990", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998", 
+                "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", 
+                "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016"],
+      "type": "array"
+    },
+    "latest_year": {
+      "ckan_name": "Latest Year Available",
+      "value": "2016",
+      "type": "string"
+    },
+    "disabled_views": {
+      "ckan_name": "Disabled Views",
+      "value": [],
+      "type": "array",
+      "constraints": {"enum": ["map", "table", "bar", "line"]}
+    },
+    "units": {
+      "ckan_name": "Units",
+      "value": {
+        "Number": "",
+        "Percent": "%"
+      }
+    },
+    "expected_number_of_geographies": {
+		  "ckan_name": "Expected Number of Unique Geographies",
+		  "value": 9,
+		  "type": "string"
+		},     
+    "default": {      
+      "ckan_name": "Default",
+			"value": {
+		 		"County": "Connecticut",
+		 		"Year": ["2012", "2013", "2014", "2015", "2016"],
+		 		"Measure Type": "Number", 
+		 		"Variable": "Housing Permits"
+			},
+		  	"type": "object"
+    } 
+  },
+  "spot_checks": [
+    {
+      "type": "$lookup",
+      "filter": {
+        "County": "Hartford County",
+        "Year": "2016",
+        "Variable": "Housing Permits", 
+        "Measure Type": "Number" 
+      },
+      "expected": {
+        "type": "$match",
+        "number type": "int",
+        "value": 1461
+      } 
+    },   
+    {
+      "type": "$lookup",
+      "filter": {
+        "County": "New London County",
+        "Year": "2012",
+        "Variable": "Housing Permits", 
+        "Measure Type": "Percent" 
+      },
+      "expected": {
+        "type": "$match",
+        "number type": "float",
+        "value": 6.2
+      } 
+    }    
+  ],
+  "dimension_groups": []
+}
