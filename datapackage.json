@@ -67,7 +67,7 @@
   "ckan_extras": {
     "full_description": {
       "ckan_name": "Full Description",
-      "value": "Housing Permits reports the number of residential permits issued annually for new residential structures. The Department of Economic and Community Develpment (DECD) Research compiles this data annually. Data is also collected by the U.S. Census on a monthly basis but only for a sample of towns in Connecticut. This sample universe changed by the Census Bureau every ten years. From 2005 through 2015, this sample counted permits from 128 out of 169 towns in Connecticut. Beginning in 2015, the new survey sample counts permits from 104 out of 169 towns. The monthly data can be found on the Department of Economic and Community Development's website. CTData also carries Annual Housing Permits by Town.",
+      "value": "Housing Permits reports the number of residential permits issued annually for new residential structures. The Department of Economic and Community Develpment (DECD) Research compiles this data annually. Data is also collected by the U.S. Census on a monthly basis but only for a sample of towns in Connecticut. The monthly data can be found on the Department of Economic and Community Development's website. CTData also carries Annual Housing Permits by Town.",
       "type": "string"
     },
     "suppression": {
