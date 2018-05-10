@@ -1,7 +1,5 @@
 Annual Housing Permits by County
 
-[![Build Status](https://travis-ci.org/CT-Data-Collaborative/annual-housing-permits-by-county.svg?branch=master)](https://travis-ci.org/CT-Data-Collaborative/annual-housing-permits-by-county)
-
 Annual Housing Permits by County reports the number of residential permits issued annually for new residential structures.
 
 Data Source: <http://www.ct.gov/ecd/cwp/view.asp?a=1106&q=250640>

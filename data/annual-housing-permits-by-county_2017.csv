@@ -26,6 +26,7 @@
 "Connecticut","09","2014","Number","Housing Permits",5329
 "Connecticut","09","2015","Number","Housing Permits",6077
 "Connecticut","09","2016","Number","Housing Permits",5504
+"Connecticut","09","2017","Number","Housing Permits",4547
 "Fairfield County","09001","1990","Number","Housing Permits",1623
 "Fairfield County","09001","1990","Percent","Housing Permits",20.1
 "Fairfield County","09001","1991","Number","Housing Permits",1489
@@ -80,6 +81,8 @@
 "Fairfield County","09001","2015","Percent","Housing Permits",42.8
 "Fairfield County","09001","2016","Number","Housing Permits",1903
 "Fairfield County","09001","2016","Percent","Housing Permits",34.6
+"Fairfield County","09001","2017","Number","Housing Permits",1719
+"Fairfield County","09001","2017","Percent","Housing Permits",37.8
 "Hartford County","09003","1990","Number","Housing Permits",1703
 "Hartford County","09003","1990","Percent","Housing Permits",21.1
 "Hartford County","09003","1991","Number","Housing Permits",1536
@@ -134,6 +137,8 @@
 "Hartford County","09003","2015","Percent","Housing Permits",14.7
 "Hartford County","09003","2016","Number","Housing Permits",1461
 "Hartford County","09003","2016","Percent","Housing Permits",26.5
+"Hartford County","09003","2017","Number","Housing Permits",957
+"Hartford County","09003","2017","Percent","Housing Permits",21
 "Litchfield County","09005","1990","Number","Housing Permits",837
 "Litchfield County","09005","1990","Percent","Housing Permits",10.4
 "Litchfield County","09005","1991","Number","Housing Permits",544
@@ -188,6 +193,8 @@
 "Litchfield County","09005","2015","Percent","Housing Permits",1.8
 "Litchfield County","09005","2016","Number","Housing Permits",157
 "Litchfield County","09005","2016","Percent","Housing Permits",2.9
+"Litchfield County","09005","2017","Number","Housing Permits",142
+"Litchfield County","09005","2017","Percent","Housing Permits",3.1
 "Middlesex County","09007","1990","Number","Housing Permits",403
 "Middlesex County","09007","1990","Percent","Housing Permits",5
 "Middlesex County","09007","1991","Number","Housing Permits",503
@@ -242,6 +249,8 @@
 "Middlesex County","09007","2015","Percent","Housing Permits",5
 "Middlesex County","09007","2016","Number","Housing Permits",220
 "Middlesex County","09007","2016","Percent","Housing Permits",4
+"Middlesex County","09007","2017","Number","Housing Permits",237
+"Middlesex County","09007","2017","Percent","Housing Permits",5.2
 "New Haven County","09009","1990","Number","Housing Permits",1969
 "New Haven County","09009","1990","Percent","Housing Permits",24.4
 "New Haven County","09009","1991","Number","Housing Permits",2193
@@ -296,6 +305,8 @@
 "New Haven County","09009","2015","Percent","Housing Permits",19.1
 "New Haven County","09009","2016","Number","Housing Permits",918
 "New Haven County","09009","2016","Percent","Housing Permits",16.7
+"New Haven County","09009","2017","Number","Housing Permits",750
+"New Haven County","09009","2017","Percent","Housing Permits",16.5
 "New London County","09011","1990","Number","Housing Permits",765
 "New London County","09011","1990","Percent","Housing Permits",9.5
 "New London County","09011","1991","Number","Housing Permits",710
@@ -350,6 +361,8 @@
 "New London County","09011","2015","Percent","Housing Permits",8.7
 "New London County","09011","2016","Number","Housing Permits",330
 "New London County","09011","2016","Percent","Housing Permits",6
+"New London County","09011","2017","Number","Housing Permits",295
+"New London County","09011","2017","Percent","Housing Permits",6.5
 "Tolland County","09013","1990","Number","Housing Permits",358
 "Tolland County","09013","1990","Percent","Housing Permits",4.4
 "Tolland County","09013","1991","Number","Housing Permits",397
@@ -404,6 +417,8 @@
 "Tolland County","09013","2015","Percent","Housing Permits",6.4
 "Tolland County","09013","2016","Number","Housing Permits",384
 "Tolland County","09013","2016","Percent","Housing Permits",7
+"Tolland County","09013","2017","Number","Housing Permits",313
+"Tolland County","09013","2017","Percent","Housing Permits",6.9
 "Windham County","09015","1990","Number","Housing Permits",422
 "Windham County","09015","1990","Percent","Housing Permits",5.2
 "Windham County","09015","1991","Number","Housing Permits",363
@@ -458,3 +473,5 @@
 "Windham County","09015","2015","Percent","Housing Permits",1.5
 "Windham County","09015","2016","Number","Housing Permits",131
 "Windham County","09015","2016","Percent","Housing Permits",2.4
+"Windham County","09015","2017","Number","Housing Permits",134
+"Windham County","09015","2017","Percent","Housing Permits",2.9

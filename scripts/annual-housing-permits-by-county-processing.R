@@ -18,7 +18,7 @@ path_to_raw <- (paste0(getwd(), "/", raw_location))
 permit_data <- dir(path_to_raw, recursive=T, pattern = "xls")
 
 #Read in data
-permits <- read_excel(paste0(path_to_raw, "/", permit_data), sheet=1, skip=3)
+permits <- read_excel(paste0(path_to_raw, "/", permit_data), sheet=1, skip=5)
 
 #Set column names
 names(permits)[names(permits) == "State/County"] <- "County"
@@ -71,7 +71,7 @@ permits_long_fips <- permits_long_fips %>%
 # Write to File
 write.table(
   permits_long_fips,
-  file.path(getwd(), "data", "annual-housing-permits-by-county_2016.csv"),
+  file.path(getwd(), "data", "annual-housing-permits-by-county_2017.csv"),
   sep = ",",
   row.names = F,
   na = "-9999"
